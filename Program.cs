@@ -19,8 +19,8 @@ namespace Katastrofy
             do {
                 menu.chooseOption();
                 Console.WriteLine("Press x to continue");
-                var x = Console.ReadLine();
-                x = n;
+                n = Console.ReadLine();
+               
             }
             while ( n == "x" );
 
