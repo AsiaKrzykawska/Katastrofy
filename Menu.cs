@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -74,28 +74,27 @@ namespace Katastrofy
         public void chooseOption()
         {
 
-            Menu menu = new Menu();
-            Menu2 menu2 = new Menu2();
+      
             Menu.createMenu();
             var chooseOption = int.Parse(Console.ReadLine());
             if (chooseOption == 1)
             {
-                menu.addCatastroph();
+                this.addCatastroph();
             }
             if (chooseOption == 2)
             {
-                menu.showCatastroph();
+                this.showCatastroph();
             }
             if (chooseOption == 3)
             {
-                menu.delateCatastroph();
+                this.delateCatastroph();
             }
-            if (chooseOption == 4)
+            /*if (chooseOption == 4)
 
             {
                 Console.Clear();
-                menu2.chooseOption2();
-            }
+                this.chooseOption2();
+            } */
 
         }
 
@@ -168,9 +167,6 @@ namespace Katastrofy
 
 
             }
-
-            
-
 
         }
 
