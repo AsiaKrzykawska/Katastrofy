@@ -12,7 +12,7 @@ namespace Katastrofy
         List<Catastroph> katastrofa = new List<Catastroph>();
         public static Katastrofy.Menu menu = new Katastrofy.Menu();
 
-        public static Katastrofy.Menu createMenu()
+       /* public static Katastrofy.Menu createMenu()
         {
             menu.AddOption("Dodaj katastrofę");
             menu.AddOption("Lista katastrof");
@@ -21,7 +21,7 @@ namespace Katastrofy
             menu.showMenu();
             return menu;
         }
-
+       */
 
         private List<MenuOption> options;
         int nr = 0;
@@ -74,8 +74,10 @@ namespace Katastrofy
         public void chooseOption()
         {
 
-      
-            Menu.createMenu();
+
+            Console.WriteLine("1.Add Catastroph");
+            Console.WriteLine("2.Show Catastroph");
+            Console.WriteLine("3.Delate Catastroph ");
             var chooseOption = int.Parse(Console.ReadLine());
             if (chooseOption == 1)
             {
